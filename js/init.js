@@ -39,3 +39,9 @@ let getJSONData = function(url){
         return result;
     });
 }
+
+document.addEventListener ("DOMContentLoaded", function(e){
+  if (JSON.parse(localStorage.getItem("userdata")) === null) {
+    window.location="login.html";
+  }
+});
